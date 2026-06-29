@@ -9,16 +9,21 @@
         main { max-width: 800px; margin: 30px auto; padding: 20px; }
         .stat { background: #0f3460; padding: 15px; margin: 10px 0; border-radius: 6px; }
         .stat span { color: #e94560; font-weight: bold; }
+        a { color: #e94560; }
     </style>
 </head>
 <body>
-    <header><h1>Control Panel</h1></header>
+    <header>
+        <h1>Control Panel</h1>
+        <a href="/Server-1/admin/">← Logout</a>
+    </header>
     <main>
         <div class="stat">Total Users: <span>1,284</span></div>
         <div class="stat">Active Jobs: <span>45</span></div>
         <div class="stat">Companies: <span>12</span></div>
         <div class="stat">API Requests Today: <span>8,452</span></div>
-        <p style="color:#666;margin-top:30px;">Server: nginx/1.24.0 | DB: MySQL 8.0 | PHP: 8.2</p>
+        <p style="color:#666;margin-top:30px;">Server: nginx/1.24.0 | DB: MySQL 8.0</p>
+        <p><a href="/Server-1/admin/database.html">Database Config</a> | <a href="/Server-1/admin/users.html">User List</a></p>
     </main>
 </body>
 </html>
