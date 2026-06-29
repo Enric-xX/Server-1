@@ -3,5 +3,10 @@
   <url><loc>https://enric-xx.github.io/Server-1/</loc></url>
   <url><loc>https://enric-xx.github.io/Server-1/jobs/</loc></url>
   <url><loc>https://enric-xx.github.io/Server-1/companies/</loc></url>
-  <url><loc>https://enric-xx.github.io/Server-1/account/login.html</loc></url>
+  <url><loc>https://enric-xx.github.io/Server-1/account/</loc></url>
+  <url><loc>https://enric-xx.github.io/Server-1/account/login/</loc></url>
+  <url><loc>https://enric-xx.github.io/Server-1/account/register/</loc></url>
+  <url><loc>https://enric-xx.github.io/Server-1/apis/</loc></url>
+  <url><loc>https://enric-xx.github.io/Server-1/health/</loc></url>
+  <url><loc>https://enric-xx.github.io/Server-1/status/</loc></url>
 </urlset>
