@@ -11,6 +11,7 @@ Disallow: /old/
 Disallow: /test/
 Disallow: /cron/
 Disallow: /includes/
+Disallow: /employee/
 Disallow: /apis/v1/
 Disallow: /need-find-path.traversal/
 Allow: /apis/v2/
