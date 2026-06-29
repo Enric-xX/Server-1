@@ -1,0 +1,10 @@
+{
+  "endpoint": "/apis/v1/search",
+  "method": "GET",
+  "params": {
+    "q": "Search query",
+    "type": "jobs|companies|users",
+    "limit": "20"
+  },
+  "example": "/apis/v1/search?q=developer&type=jobs"
+}
