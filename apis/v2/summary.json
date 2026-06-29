@@ -1,0 +1,11 @@
+{
+  "status": "operational",
+  "version": "2.1.0",
+  "endpoints": {
+    "jobs": "/apis/v2/jobs",
+    "users": "/apis/v2/users",
+    "search": "/apis/v2/search"
+  },
+  "internal_ip": "192.168.1.50",
+  "database_host": "db-internal.jobportal.local:3306"
+}
