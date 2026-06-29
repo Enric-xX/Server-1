@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal Network - JobPortal</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0a0a0a; color: #00ff00; }
+        main { max-width: 600px; margin: 50px auto; padding: 20px; font-family: monospace; }
+        .line { margin: 5px 0; }
+        .ip { color: #00ffff; }
+    </style>
+</head>
+<body>
+    <main>
+        <pre>
+╔══════════════════════════════════╗
+║   INTERNAL NETWORK ACCESS       ║
+╚══════════════════════════════════╝
+
+Connected to: <span class="ip">192.168.1.50</span>
+Gateway: <span class="ip">192.168.1.1</span>
+DNS: <span class="ip">10.0.0.53</span>
+
+Active connections:
+  <span class="ip">192.168.1.51</span> - web-server-01
+  <span class="ip">192.168.1.52</span> - db-server-01
+  <span class="ip">192.168.1.53</span> - cache-server-01
+
+Services:
+  MySQL: 3306
+  Redis: 6379
+  SSH: 22
+        </pre>
+    </main>
+</body>
+</html>
