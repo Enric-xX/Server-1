@@ -3,6 +3,16 @@ Disallow: /admin/
 Disallow: /internal/
 Disallow: /dev/
 Disallow: /backup/
+Disallow: /config/
+Disallow: /logs/
+Disallow: /temp/
+Disallow: /staging/
+Disallow: /old/
+Disallow: /test/
+Disallow: /cron/
+Disallow: /includes/
 Disallow: /apis/v1/
+Disallow: /need-find-path.traversal/
 Allow: /apis/v2/
+Allow: /apis/
 Sitemap: https://enric-xx.github.io/Server-1/sitemap.xml
