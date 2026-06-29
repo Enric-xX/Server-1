@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Documentation - JobPortal</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f6f9; color: #2c3e50; }
+        header { background: #1a73e8; color: white; padding: 20px; text-align: center; }
+        main { max-width: 800px; margin: 30px auto; padding: 20px; }
+        .endpoint { background: white; padding: 20px; margin: 15px 0; border-radius: 8px; border-left: 5px solid #1a73e8; }
+        .endpoint h3 { color: #1a73e8; }
+        .method { background: #1557b0; color: white; padding: 3px 10px; border-radius: 4px; font-size: 12px; }
+        code { background: #eee; padding: 2px 8px; border-radius: 3px; font-family: monospace; }
+        a { color: #1a73e8; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>API Documentation</h1>
+        <p>JobPortal REST API v1 & v2</p>
+    </header>
+    <main>
+        <div class="endpoint">
+            <h3><span class="method">GET</span> /apis/v1/jobs</h3>
+            <p>Returns a list of available job offers.</p>
+            <p><a href="/Server-1/apis/v1/jobs.json">Try it →</a></p>
+        </div>
+        <div class="endpoint">
+            <h3><span class="method">GET</span> /apis/v1/users</h3>
+            <p>Returns user information and statistics.</p>
+            <p><a href="/Server-1/apis/v1/users.json">Try it →</a></p>
+        </div>
+        <div class="endpoint">
+            <h3><span class="method">GET</span> /apis/v2/summary</h3>
+            <p>Returns system status and internal configuration.</p>
+            <p><a href="/Server-1/apis/v2/summary.json">Try it →</a></p>
+        </div>
+        <hr style="margin: 30px 0;">
+        <h2>Version History</h2>
+        <p><strong>v2</strong> - Current stable version</p>
+        <p><strong>v1</strong> - Deprecated, still available</p>
+        <p style="color:#666;margin-top:20px;">Base URL: <code>https://enric-xx.github.io/Server-1/apis/</code></p>
+    </main>
+</body>
+</html>
