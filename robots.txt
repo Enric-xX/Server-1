@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /internal/
+Disallow: /dev/
+Disallow: /backup/
+Disallow: /apis/v1/
+Allow: /apis/v2/
+Sitemap: https://enric-xx.github.io/Server-1/sitemap.xml
