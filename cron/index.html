@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Cron Jobs</title>
+<style>body{background:#1a1a2e;color:#e0e0e0;font-family:monospace;padding:30px;}</style></head>
+<body>
+    <pre>
+# Cron Jobs - JobPortal
+0 2 * * * /usr/bin/php /var/www/backup.php
+0 4 * * * /usr/bin/mysqldump -u admin_portal -p jobportal_db
+*/15 * * * * /usr/bin/php /var/www/cleanup.php
+0 6 * * * /usr/bin/php /var/www/sync_users.php
+    </pre>
+</body>
+</html>
