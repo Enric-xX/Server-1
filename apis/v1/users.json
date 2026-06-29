@@ -1,0 +1,11 @@
+{
+  "total": 1284,
+  "active": 967,
+  "last_registered": {
+    "id": 1284,
+    "username": "maria_dev",
+    "email": "maria@example.com",
+    "joined": "2026-06-28"
+  },
+  "admin_contact": "admin@jobportal.internal"
+}
