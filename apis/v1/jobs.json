@@ -1,0 +1,30 @@
+{
+  "total": 45,
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Frontend Developer",
+      "company": "TechCorp Inc.",
+      "location": "Remote",
+      "salary": "€45,000 - €55,000",
+      "type": "Full-time"
+    },
+    {
+      "id": 2,
+      "title": "Backend Engineer",
+      "company": "DataFlow Systems",
+      "location": "Madrid",
+      "salary": "€50,000 - €65,000",
+      "type": "Full-time"
+    },
+    {
+      "id": 3,
+      "title": "UX Designer",
+      "company": "CreativeMinds",
+      "location": "Barcelona",
+      "salary": "€35,000 - €45,000",
+      "type": "Contract"
+    }
+  ],
+  "internal_notes": "Cache expires 3600s - DO NOT EXPOSE"
+}
