@@ -1,0 +1,10 @@
+{
+  "total": 1284,
+  "users": [
+    {"id": 1, "username": "admin", "email": "admin@jobportal.internal", "role": "superadmin"},
+    {"id": 2, "username": "john_doe", "email": "john@example.com", "role": "user"},
+    {"id": 3, "username": "maria_dev", "email": "maria@example.com", "role": "user"},
+    {"id": 4, "username": "dev_team", "email": "dev@jobportal.internal", "role": "admin"}
+  ],
+  "internal_note": "DO NOT EXPOSE THIS ENDPOINT"
+}
