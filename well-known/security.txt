@@ -1,0 +1,4 @@
+Contact: mailto:security@jobportal.local
+Expires: 2027-01-01T00:00:00.000Z
+Preferred-Languages: en, es
+Canonical: https://enric-xx.github.io/Server-1/.well-known/security.txt
