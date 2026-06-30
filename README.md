@@ -52,6 +52,8 @@ Servidor de pruebas para bug bounty, path traversal y ojalá una room de TryHack
 
 ### Documentación
 Disponible en `/apis/` — Incluye ejemplos de uso y endpoints.
+
+
 ---
 
 > [!NOTE]  
