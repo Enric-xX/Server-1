@@ -1,6 +1,11 @@
 # Server #1 - JobPortal
 
-Servidor de pruebas para bug bounty y path traversal.
+Servidor de pruebas para bug bounty, path traversal y ojalá una room de TryHackMe.
+
+---
+<img width="1408" height="768" alt="Gemini_Generated_Image_h45pd1h45pd1h45p" src="https://github.com/user-attachments/assets/486222dc-4fe1-402f-a003-9ac747ea9fe7" />
+
+---
 
 ## Estructura
 - **jobs/** - Ofertas de empleo
@@ -25,7 +30,7 @@ Servidor de pruebas para bug bounty y path traversal.
 - v1 (deprecated): jobs, users, search
 - v2 (stable): summary, users, internal
 
-## Notas
+> [!NOTE]  
 - Algunos endpoints contienen información interna
 - Usar PathTraversalBot para encontrar rutas ocultas
 - Solo para pruebas éticas
