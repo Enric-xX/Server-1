@@ -7,24 +7,15 @@
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #1a1a2e; color: #e0e0e0; }
         .header { background: #16213e; padding: 15px; text-align: center; }
         .panel-main { max-width: 900px; margin: 30px auto; padding: 20px; }
-        a { color: #e94560; cursor: pointer; text-decoration: underline; }
         pre { background: #0a0a1a; padding: 15px; border-radius: 6px; overflow-x: auto; font-size: 11px; max-height: 400px; overflow-y: auto; }
-        .section { display: none; margin-top: 20px; }
-        .congrats { background: #0f3460; padding: 20px; border-radius: 8px; text-align: center; margin: 20px 0; }
     </style>
 </head>
 <body>
 
     <div class="header"><h1>Employee Database</h1></div>
     <div class="panel-main">
-        <p>
-            <a onclick="showSection('employees')">Employee List</a> |
-            <a onclick="showSection('flag')">Flag</a>
-        </p>
-
-        <div id="employees" class="section">
-            <h3>Employee List (99 records)</h3>
-            <pre>ID   | Name                | Department     | Email
+        <h3>Employee List (99 records)</h3>
+        <pre>ID   | Name                | Department     | Email
 -----|---------------------|----------------|--------------------------
 1    | John Smith          | Engineering    | john.smith@jobportal.local
 2    | Maria Garcia        | Marketing      | maria.garcia@jobportal.local
@@ -124,23 +115,7 @@
 96   | Martha Woods        | Engineering    | martha.woods@jobportal.local
 97   | Peter Cole          | Finance        | peter.cole@jobportal.local
 98   | Phyllis West        | Marketing      | phyllis.west@jobportal.local
-99   | flag{employee_database_leaked} | Engineering | flag@jobportal.local</pre>
-        </div>
-
-        <div id="flag" class="section">
-            <div class="congrats">
-                <h3>Congratulations!</h3>
-                <p>You found the hidden flag.</p>
-            </div>
-        </div>
+99   | Flag                | Engineering    | flag{employee_database_leaked}</pre>
     </div>
-
-    <script>
-        function showSection(id) {
-            document.getElementById("employees").style.display = "none";
-            document.getElementById("flag").style.display = "none";
-            document.getElementById(id).style.display = "block";
-        }
-    </script>
 </body>
 </html>
