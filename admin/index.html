@@ -21,7 +21,6 @@
 </head>
 <body>
 
-    <!-- LOGIN -->
     <div id="login">
         <div class="header"><h1>Admin Panel</h1></div>
         <div class="login-box">
@@ -32,7 +31,6 @@
         </div>
     </div>
 
-    <!-- PANEL -->
     <div id="panel">
         <div class="header">
             <h1>Control Panel</h1>
@@ -45,7 +43,8 @@
             <p style="color:#666;margin-top:20px;">Server: nginx/1.24.0 | DB: MySQL 8.0</p>
             <p>
                 <a onclick="showSection('db')">Database Config</a> | 
-                <a onclick="showSection('users')">User List</a>
+                <a onclick="showSection('users')">User List</a> |
+                <a onclick="showSection('flag')">Flag</a>
             </p>
 
             <div id="db" class="section">
@@ -62,6 +61,11 @@ DB_NAME=jobportal_db</pre>
 1   | admin       | superadmin
 2   | john_doe    | user
 3   | maria_dev   | user</pre>
+            </div>
+
+            <div id="flag" class="section">
+                <h3>Congratulations</h3>
+                <pre>flag{server1-admin-flag}</pre>
             </div>
         </div>
     </div>
@@ -83,10 +87,12 @@ DB_NAME=jobportal_db</pre>
             document.getElementById("login").style.display = "block";
             document.getElementById("db").style.display = "none";
             document.getElementById("users").style.display = "none";
+            document.getElementById("flag").style.display = "none";
         }
         function showSection(id) {
             document.getElementById("db").style.display = "none";
             document.getElementById("users").style.display = "none";
+            document.getElementById("flag").style.display = "none";
             document.getElementById(id).style.display = "block";
         }
     </script>
