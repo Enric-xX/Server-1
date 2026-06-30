@@ -6,11 +6,6 @@
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #1a1a2e; color: #e0e0e0; }
         .header { background: #16213e; padding: 15px; text-align: center; }
-        .login-box { max-width: 400px; margin: 80px auto; padding: 30px; background: #0f3460; border-radius: 8px; }
-        .login-box input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #333; border-radius: 4px; background: #1a1a2e; color: #e0e0e0; box-sizing: border-box; }
-        .login-box button { width: 100%; padding: 12px; background: #e94560; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
-        .error { color: #e94560; text-align: center; display: none; margin-top: 10px; }
-        #panel { display: none; }
         .panel-main { max-width: 800px; margin: 30px auto; padding: 20px; }
         a { color: #e94560; cursor: pointer; text-decoration: underline; }
         pre { background: #0a0a1a; padding: 15px; border-radius: 6px; overflow-x: auto; font-size: 12px; max-height: 400px; overflow-y: auto; }
@@ -19,30 +14,16 @@
 </head>
 <body>
 
-    <div id="login">
-        <div class="header"><h1>Employee Database</h1></div>
-        <div class="login-box">
-            <input type="text" id="user" placeholder="Employee ID">
-            <input type="password" id="pass" placeholder="Password">
-            <button onclick="login()">Access Database</button>
-            <p class="error" id="error">Wrong credentials. Try again.</p>
-        </div>
-    </div>
+    <div class="header"><h1>Employee Database</h1></div>
+    <div class="panel-main">
+        <p>
+            <a onclick="showSection('employees')">Employee List</a> |
+            <a onclick="showSection('flag')">Flag</a>
+        </p>
 
-    <div id="panel">
-        <div class="header">
-            <h1>Employee Database</h1>
-            <a onclick="logout()">← Logout</a>
-        </div>
-        <div class="panel-main">
-            <p>
-                <a onclick="showSection('employees')">Employee List</a> |
-                <a onclick="showSection('flag')">Flag</a>
-            </p>
-
-            <div id="employees" class="section">
-                <h3>Employee List (99 records)</h3>
-                <pre>ID   | Name                | Department     | Email
+        <div id="employees" class="section">
+            <h3>Employee List (99 records)</h3>
+            <pre>ID   | Name                | Department     | Email
 -----|---------------------|----------------|--------------------------
 1    | John Smith          | Engineering    | john.smith@jobportal.local
 2    | Maria Garcia        | Marketing      | maria.garcia@jobportal.local
@@ -56,33 +37,15 @@
 10   | Laura Thomas        | HR             | laura.thomas@jobportal.local
 ...
 99   | Robert Taylor       | Engineering    | robert.taylor@jobportal.local</pre>
-            </div>
+        </div>
 
-            <div id="flag" class="section">
-                <h3>Congratulations</h3>
-                <pre>flag{employee_database_leaked}</pre>
-            </div>
+        <div id="flag" class="section">
+            <h3>Congratulations</h3>
+            <pre>flag{employee_database_leaked}</pre>
         </div>
     </div>
 
     <script>
-        function login() {
-            var u = document.getElementById("user").value;
-            var p = document.getElementById("pass").value;
-            if (u === "admin" && p === "J0bP0rt4l_2026!") {
-                document.getElementById("login").style.display = "none";
-                document.getElementById("panel").style.display = "block";
-                document.getElementById("error").style.display = "none";
-            } else {
-                document.getElementById("error").style.display = "block";
-            }
-        }
-        function logout() {
-            document.getElementById("panel").style.display = "none";
-            document.getElementById("login").style.display = "block";
-            document.getElementById("employees").style.display = "none";
-            document.getElementById("flag").style.display = "none";
-        }
         function showSection(id) {
             document.getElementById("employees").style.display = "none";
             document.getElementById("flag").style.display = "none";
