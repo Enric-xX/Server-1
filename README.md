@@ -59,7 +59,7 @@ Disponible en `/apis/` — Incluye ejemplos de uso y endpoints.
 
 ## Writeup
 
-Read the full walkthrough on Medium: [Server-1: Vulnerable Job Portal — Path Traversal Walkthrough (5 Flags)](https://medium.com/@enric-xx/server-1-vulnerable-job-portal-path-traversal-walkthrough-5-flags-280cca534a79)
+Lee el writeup completo en Medium: [Server-1: Vulnerable Job Portal — Path Traversal Walkthrough (5 Flags)](https://medium.com/@enric-xx/server-1-vulnerable-job-portal-path-traversal-walkthrough-5-flags-280cca534a79)
 
 ---
 
