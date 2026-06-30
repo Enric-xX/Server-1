@@ -35,9 +35,23 @@ Servidor de pruebas para bug bounty, path traversal y ojalá una room de TryHack
 ---
 
 ## APIs
-- v1 (deprecated): jobs, users, search
-- v2 (stable): summary, users, internal
 
+### v2 (Stable)
+| Endpoint | Descripción |
+|----------|-------------|
+| `/apis/v2/summary.json` | Estado del sistema y configuración interna |
+| `/apis/v2/users.json` | Listado de usuarios con roles y correos |
+| `/apis/v2/internal.json` | Información de red interna y servicios |
+
+### v1 (Deprecated)
+| Endpoint | Descripción |
+|----------|-------------|
+| `/apis/v1/jobs.json` | Ofertas de empleo |
+| `/apis/v1/users.json` | Estadísticas de usuarios |
+| `/apis/v1/search.json` | Búsqueda en jobs, companies y users |
+
+### Documentación
+Disponible en `/apis/` — Incluye ejemplos de uso y endpoints.
 ---
 
 > [!NOTE]  
