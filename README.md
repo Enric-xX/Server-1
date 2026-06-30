@@ -8,29 +8,39 @@ Servidor de pruebas para bug bounty, path traversal y ojalá una room de TryHack
 ---
 
 ## Estructura
-- **jobs/** - Ofertas de empleo
-- **companies/** - Empresas
-- **account/** - Usuarios (dashboard, login, register, settings)
-- **apis/** - API REST v1 & v2
-- **admin/** - Panel de administración (oculto)
-- **dev/** - Entorno de desarrollo (oculto)
-- **backup/** - Copias de seguridad (oculto)
-- **internal/** - Red interna (oculto)
-- **config/** - Configuración del sistema (oculto)
-- **logs/** - Registros de acceso (oculto)
-- **temp/** - Archivos temporales (oculto)
-- **cron/** - Tareas programadas (oculto)
-- **employee/** - Portal de empleados (oculto)
-- **includes/** - Archivos de inclusión (oculto)
-- **staging/** - Entorno de pruebas (oculto)
-- **old/** - Versión antigua (oculto)
-- **test/** - Pruebas (oculto)
+
+| Ruta | Descripción | Acceso |
+|------|-------------|--------|
+| `jobs/` | Ofertas de empleo | Público |
+| `companies/` | Empresas registradas | Público |
+| `account/` | Dashboard, login, registro y ajustes | Público |
+| `apis/` | API REST v1 (deprecated) y v2 (stable) | Público |
+| `health/` | Estado del servidor | Público |
+| `status/` | Monitorización del sistema | Público |
+| `admin/` | Panel de administración | 🔒 Oculto |
+| `dev/` | Entorno de desarrollo | 🔒 Oculto |
+| `backup/` | Copias de seguridad | 🔒 Oculto |
+| `internal/` | Información de red interna | 🔒 Oculto |
+| `config/` | Configuración del sistema | 🔒 Oculto |
+| `logs/` | Registros de acceso | 🔒 Oculto |
+| `temp/` | Archivos temporales | 🔒 Oculto |
+| `cron/` | Tareas programadas | 🔒 Oculto |
+| `employee/` | Base de datos de empleados | 🔒 Oculto |
+| `includes/` | Archivos de inclusión | 🔒 Oculto |
+| `staging/` | Entorno de pruebas | 🔒 Oculto |
+| `old/` | Versión antigua del portal | 🔒 Oculto |
+| `test/` | Entorno de testing | 🔒 Oculto |
+| `need-find-path.traversal/` | PathTraversalBot descargable | 🔒 Oculto |
+
+---
 
 ## APIs
 - v1 (deprecated): jobs, users, search
 - v2 (stable): summary, users, internal
 
+---
+
 > [!NOTE]  
-- Algunos endpoints contienen información interna
-- Usar PathTraversalBot para encontrar rutas ocultas
-- Solo para pruebas éticas
+> Algunos endpoints contienen información interna
+> Usar PathTraversalBot para encontrar rutas ocultas
+> Solo para pruebas éticas
